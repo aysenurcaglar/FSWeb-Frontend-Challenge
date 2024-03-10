@@ -6,6 +6,7 @@ export default {
   ],
   theme: {
     extend: {},
+    darkMode: 'class',
     colors: {
       'navy-blue': '#3730A3',
       'lilac': '#BAB2E7',
