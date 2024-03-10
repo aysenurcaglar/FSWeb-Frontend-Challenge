@@ -1,16 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useState } from 'react';
 import './App.css'
 import { Header } from './components/Header'
+import { useDarkMode } from './hooks/useDarkMode';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [darkMode, toggleDarkMode] = useDarkMode();
+
 
   return (
-    <>
-      <Header />
-    </>
+    <div className={darkMode ? 'App dark-mode' : 'App'}>
+      <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+    </div>
   )
 }
 

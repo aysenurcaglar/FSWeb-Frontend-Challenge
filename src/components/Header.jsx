@@ -1,6 +1,6 @@
 import ToggleButton from "./ToggleButton";
 
-export const Header = () => {
+export const Header = ({ darkMode, toggleDarkMode }) => {
     return (
         <header>
         <ToggleButton />

@@ -19,6 +19,9 @@ const ToggleButton = () => {
           className={`absolute w-3 h-3 rounded-full transition-transform duration-300 bg-yellow`}
           style={{ transform: darkMode ? 'translateX(30%)' : 'translateX(200%)', }}
         ></div>
+        {darkMode && (
+          <div className="absolute w-2.5 h-2.5 rounded-full bg-toggle-gray left-2 transition-opacity duration-400 ease-in"></div>
+        )}
       </div>
       <span className={`${darkMode ? 'text-light-mode' : 'text-gray-dark'}`}>
         {darkMode ? 'LIGHT MODE' : 'DARK MODE'}
