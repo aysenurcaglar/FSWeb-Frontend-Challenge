@@ -1,6 +1,9 @@
 import React from "react"
+import { useDarkMode } from "../contexts/DarkModeContext"
 
-export const Header = ({ darkMode, toggleDarkMode }) => {
+export const Header = () => {
+    const { darkMode, toggleDarkMode } = useDarkMode();
+    
     return (
         <header className={`flex flex-col justify-between py-4 px-8 lg:py-8 lg:px-16`} >
             <div className={`flex items-center space-x-2 ml-auto mb-8`}>
