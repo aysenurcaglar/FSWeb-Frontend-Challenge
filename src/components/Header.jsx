@@ -2,8 +2,8 @@ import React from "react"
 
 export const Header = ({ darkMode, toggleDarkMode }) => {
     return (
-        <header className={`flex ${darkMode ? 'bg-dark-bg' : 'bg-white'} p-8`} >
-        <div className={`flex items-center space-x-2`}>
+        <header className={`flex justify-between p-8`} >
+        <div className={`flex items-center space-x-2 ml-auto`}>
       <div
         className={`relative w-10 h-5 flex items-center cursor-pointer transition-colors duration-300 rounded-full ${
           darkMode ? 'bg-toggle-gray' : 'bg-toggle-purple'
@@ -18,10 +18,15 @@ export const Header = ({ darkMode, toggleDarkMode }) => {
           <div className="absolute w-2.5 h-2.5 rounded-full bg-toggle-gray left-2 transition-opacity duration-400 ease-in"></div>
         )}
       </div>
+    
       <span className={`${darkMode ? 'text-light-mode' : 'text-gray-dark'}`}>
         {darkMode ? 'LIGHT MODE' : 'DARK MODE'}
       </span>
-    </div>
+      <span className="text-gray-dark">|</span>
+      <span className={`text-gray-dark`}>
+          <span className={`${darkMode ? 'text-lilac' : 'text-toggle-purple'}`}>TÜRKÇE</span>'YE GEÇ
+        </span>
+        </div>
         </header>
     )
 }
