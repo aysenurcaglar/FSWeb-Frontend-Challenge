@@ -47,8 +47,8 @@ export const Header = () => {
                     <span className={`dark:text-dark-logo-font text-logo-purple transform rotate-45`}>A</span>
                 </div>
                 <nav className="flex items-center space-x-4 lg:space-x-16 ml-auto">
-                    <a href="#" className={`text-gray`}>Skills</a>
-                    <a href="#" className={`text-gray`}>Projects</a>
+                    <a href="/#skills" className={`text-gray`}>Skills</a>
+                    <a href="/#projects" className={`text-gray`}>Projects</a>
                     <a href="#" className={'text-navy-blue px-4 py-2 border border-navy-blue rounded-md dark:bg-white'}>Hire me</a>
                 </nav>
             </div>

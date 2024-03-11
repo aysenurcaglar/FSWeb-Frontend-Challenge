@@ -2,8 +2,8 @@ import React from "react";
 
 export const Introduction = () => {
     return (
-        <div className="p-8 flex flex-col lg:flex-row lg:p-16 place-content-between">
-            <div className="text-left lg:mr-16">
+        <div className="p-8 flex flex-col lg:flex-row gap-x-8 lg:gap-x-16 lg:p-16 place-content-between">
+            <div className="text-left">
                 <p className="mb-8 text-dark-purple dark:text-dark-mode-name">————— Almila Su</p>
                 <h1 className="font-bold text-black-heading dark:text-bluish-gray lg:text-6xl">Creative thinker</h1>
                 <h1 className="font-bold text-black-heading dark:text-bluish-gray lg:text-6xl">Minimalism lover</h1>
