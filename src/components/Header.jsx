@@ -28,7 +28,7 @@ export const Header = () => {
 
                 <span className="text-gray-dark">|</span>
 
-                {language === 'tr' ? (<span 
+                {language === 'en' ? (<span 
                 className={`text-gray-dark`}
                 onClick={switchLanguage}>
                     <span className={'dark:text-lilac text-toggle-purple'}>TÜRKÇE</span>'YE GEÇ
