@@ -8,7 +8,7 @@ function App() {
 
 
   return (
-    <div className={darkMode ? 'App dark-mode' : 'App'}>
+    <div className={`App`}>
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
     </div>
   )
