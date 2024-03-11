@@ -12,7 +12,7 @@ function App() {
 
 
   return (
-    <div className={`App ${darkMode ? 'bg-dark-bg' : 'bg-white'}`}>
+    <div className={`App dark:bg-dark-bg bg-white}`}>
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <Skills />
       <Profile />

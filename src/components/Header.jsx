@@ -5,9 +5,7 @@ export const Header = ({ darkMode, toggleDarkMode }) => {
         <header className={`flex justify-between p-8`} >
         <div className={`flex items-center space-x-2 ml-auto`}>
       <div
-        className={`relative w-10 h-5 flex items-center cursor-pointer transition-colors duration-300 rounded-full ${
-          darkMode ? 'bg-toggle-gray' : 'bg-toggle-purple'
-        }`}
+        className={`relative w-10 h-5 flex items-center cursor-pointer transition-colors duration-300 rounded-full bg-toggle-purple dark:bg-toggle-gray`}
         onClick={toggleDarkMode}
       >
         <div
@@ -19,12 +17,12 @@ export const Header = ({ darkMode, toggleDarkMode }) => {
         )}
       </div>
     
-      <span className={`${darkMode ? 'text-light-mode' : 'text-gray-dark'}`}>
+      <span className={`dark:text-light-mode text-gray-dark`}>
         {darkMode ? 'LIGHT MODE' : 'DARK MODE'}
       </span>
       <span className="text-gray-dark">|</span>
       <span className={`text-gray-dark`}>
-          <span className={`${darkMode ? 'text-lilac' : 'text-toggle-purple'}`}>TÜRKÇE</span>'YE GEÇ
+          <span className={`dark:text-lilac text-toggle-purple}`}>TÜRKÇE</span>'YE GEÇ
         </span>
         </div>
         </header>
