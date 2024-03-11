@@ -11,6 +11,7 @@ export const LanguageProvider = ({ children }) => {
   const [apiResponse, setApiResponse] = useState({});
 
   const switchLanguage = () => {
+    console.log('Language switched: ', language);
     setLanguage((prevLanguage) => (prevLanguage === 'en' ? 'tr' : 'en'));
   };
 

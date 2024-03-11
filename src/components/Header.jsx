@@ -1,9 +1,11 @@
-import React from "react"
-import { useDarkMode } from "../contexts/DarkModeContext"
+import React from "react";
+import { useDarkMode } from "../contexts/DarkModeContext";
+import { useLanguage } from "../contexts/LanguageContext";
 
 export const Header = () => {
     const { darkMode, toggleDarkMode } = useDarkMode();
-    
+    const { language, switchLanguage } = useLanguage();
+
     return (
         <header className={`flex flex-col justify-between py-4 px-8 lg:py-8 lg:px-16`} >
             <div className={`flex items-center space-x-2 ml-auto mb-8`}>
@@ -23,10 +25,19 @@ export const Header = () => {
                 <span className={`dark:text-light-mode text-gray-dark`}>
                     {darkMode ? 'LIGHT MODE' : 'DARK MODE'}
                 </span>
+
                 <span className="text-gray-dark">|</span>
-                <span className={`text-gray-dark`}>
+
+                {language === 'tr' ? (<span 
+                className={`text-gray-dark`}
+                onClick={switchLanguage}>
                     <span className={'dark:text-lilac text-toggle-purple'}>TÜRKÇE</span>'YE GEÇ
-                </span>
+                </span>) :  
+                (<span 
+                className={`text-gray-dark`}
+                onClick={switchLanguage}>
+                    SWITCH TO <span className={'dark:text-lilac text-toggle-purple'}>ENGLISH</span>
+                </span>)}
             </div>
 
             <div className={`flex items-center`}>
