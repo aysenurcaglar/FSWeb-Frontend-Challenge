@@ -11,7 +11,7 @@ export default {
     colors: {
       'navy-blue': '#3730A3',
       'lilac': '#BAB2E7',
-      'bluish-grey': '#AEBCCF',
+      'bluish-gray': '#AEBCCF',
       'green': '#00AB6B',
       'gray-dark': '#777777',
       'gray': '#6B7280',
@@ -39,6 +39,7 @@ export default {
       'dark-mode-linkedin': '#0BA6F6',
       'dark-footer-bg': '#141414',
       'dark-bg': '#252128',
+      'white': '#FFFFFF',
     },
   },
   plugins: [],

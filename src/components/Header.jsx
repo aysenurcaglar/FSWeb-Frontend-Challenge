@@ -2,7 +2,7 @@ import React from "react"
 
 export const Header = ({ darkMode, toggleDarkMode }) => {
     return (
-        <header className={`flex flex-col justify-between py-8 px-16`} >
+        <header className={`flex flex-col justify-between py-4 px-8 lg:py-8 lg:px-16`} >
             <div className={`flex items-center space-x-2 ml-auto mb-8`}>
                 <div
                     className={`relative w-10 h-5 flex items-center cursor-pointer transition-colors duration-300 rounded-full bg-toggle-purple dark:bg-toggle-gray`}
@@ -32,7 +32,7 @@ export const Header = ({ darkMode, toggleDarkMode }) => {
                 >
                     <span className={`dark:text-dark-logo-font text-logo-purple transform rotate-45`}>A</span>
                 </div>
-                <nav className="flex items-center space-x-16 ml-auto">
+                <nav className="flex items-center space-x-4 lg:space-x-16 ml-auto">
                     <a href="#" className={`text-gray`}>Skills</a>
                     <a href="#" className={`text-gray`}>Projects</a>
                     <a href="#" className={'text-navy-blue px-4 py-2 border border-navy-blue rounded-md dark:bg-white'}>Hire me</a>
