@@ -1,0 +1,117 @@
+{
+    "header": {
+        "darkMode": "GECE MODU",
+        "lightMode": "GÜNDÜZ MODU",
+        "skills": "Beceriler",
+        "projects": "Projeler",
+        "hireMe": "Bana ulaşın"
+    },
+    "introduction": {
+        "name": "Almila Su",
+        "role1": "Yaratıcı düşünür",
+        "role2": "Minimalizm tutkunu",
+        "description": "Merhaba, ben Almila. Full-stack yazılımcıyım. Harika kullanıcı deneyimleri ile sağlam ve ölçeklenebilir frontend ürünleri oluşturacak bir yazılımcı arıyorsanız gelin el sıkışalım.",
+        "hireMe": "Bana ulaşın"
+    },
+    "skills": {
+        "title": "Beceriler",
+        "items": [
+            {
+                "name": "Javascript",
+                "description": "Türemiş sıfat gördüm gazete değerli olduğu için adanaya telefonu lakin layıkıyla filmini mi masanın."
+            },
+            {
+                "name": "React.Js",
+                "description": "Türemiş sıfat gördüm gazete değerli olduğu için adanaya telefonu lakin layıkıyla filmini mi masanın."
+            },
+            {
+                "name": "Node.Js",
+                "description": "Türemiş sıfat gördüm gazete değerli olduğu için adanaya telefonu lakin layıkıyla filmini mi masanın."
+            }
+        ]
+    },
+    "profile": {
+        "title": "Profil",
+        "basicInformation": {
+            "title": "Temel Bilgiler",
+            "items": [
+                {
+                    "label": "Doğum Tarihi",
+                    "value": "24.03.1996"
+                },
+                {
+                    "label": "İkamet Şehri",
+                    "value": "Ankara"
+                },
+                {
+                    "label": "Eğitim Durumu",
+                    "value": "Hacettepe Ünv. Biyoloji Lisans, 2016"
+                },
+                {
+                    "label": "Tercih Ettiği Rol",
+                    "value": "Frontend, UI"
+                }
+            ]
+        },
+        "aboutMe": {
+            "title": "Hakkımda",
+            "paragraphs": [
+                "Lambadaki gitti salladı masaya doğru de mutlu oldular dışarı çıktılar bilgisayarı sıla ama göze çarpan tv balıkhaneye.",
+                "Domates tv de dışarı çıktılar salladı masaya doğru düşünüyor masanın telefonu. Çakıl yazın mutlu oldular."
+            ]
+        }
+    },
+    "projects": {
+        "title": "Projeler",
+        "viewSite": "View Site",
+        "items": [
+            {
+                "title": "Workintech",
+                "image": "Rectangle-41.jpg",
+                "description": "Kullanıcılarınızın hangi çerezleri kabul edeceğini veya reddedeceğini seçmesine olanak tanıyan basit, özelleştirilebilir, minimal düzeyde kurulum gerektiren bir çerez eklentisi. Vanilla JS, SCSS ve Parcel Bundler ile oluşturulmuştur, NPM paketi olarak sunulmaktadır ve git deposu kod ve temalarda her türlü özelleştirmeyi mümkün kılmaktadır.",
+                "technologies": [
+                    "react",
+                    "redux",
+                    "axios"
+                ],
+                "githubLink": "https://github.com",
+                
+                "viewSiteLink": "#"
+            },
+            {
+                "title": "Random Jokes",
+                "image": "Rectangle-42.jpg",
+                "description": "Kullanıcılarınızın hangi çerezleri kabul edeceğini veya reddedeceğini seçmesine olanak tanıyan basit, özelleştirilebilir, minimal düzeyde kurulum gerektiren bir çerez eklentisi. Vanilla JS, SCSS ve Parcel Bundler ile oluşturulmuştur, NPM paketi olarak sunulmaktadır ve git deposu kod ve temalarda her türlü özelleştirmeyi mümkün kılmaktadır.",
+                "technologies": [
+                    "react",
+                    "redux",
+                    "axios"
+                ],
+                "githubLink": "https://github.com",
+                "viewSiteLink": "#"
+            },
+            {
+                "title": "Journey",
+                "image": "Rectangle-43.jpg",
+                "description": "Kullanıcılarınızın hangi çerezleri kabul edeceğini veya reddedeceğini seçmesine olanak tanıyan basit, özelleştirilebilir, minimal düzeyde kurulum gerektiren bir çerez eklentisi. Vanilla JS, SCSS ve Parcel Bundler ile oluşturulmuştur, NPM paketi olarak sunulmaktadır ve git deposu kod ve temalarda her türlü özelleştirmeyi mümkün kılmaktadır.",
+                "technologies": [
+                    "react",
+                    "redux",
+                    "axios"
+                ],
+                "githubLink": "https://github.com",
+                "viewSiteLink": "#"
+            }
+        ]
+    },
+    "footer": {
+        "contactHeader": "Bir sonraki ürününüz üzerinde birlikte çalışalım.",
+        "contactEmail": "example@example.com",
+        "personalBlogLabel": "Kişisel Blog",
+        "links": {
+            "personalBlog": "#",
+            "github": "#",
+            "linkedin": "#"
+        }
+    }
+}

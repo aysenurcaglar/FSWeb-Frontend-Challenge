@@ -1,0 +1,115 @@
+{
+    "header": {
+        "darkMode": "Dark Mode",
+        "lightMode": "Light Mode",
+        "skills": "Skills",
+        "projects": "Projects",
+        "hireMe": "Hire me"
+    },
+    "introduction": {
+        "name": "Almila Su",
+        "role1": "Creative thinker",
+        "role2": "Minimalism lover",
+        "description": "Hi, I’m Almila. I’m a full-stack developer. If you are looking for a Developer to craft solid and scalable frontend products with great user experiences, let’s shake hands.",
+        "hireMe": "Hire me"
+    },
+    "skills": {
+        "title": "Skills",
+        "items": [
+            {
+                "name": "Javascript",
+                "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            },
+            {
+                "name": "React.Js",
+                "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            },
+            {
+                "name": "Node.Js",
+                "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            }
+        ]
+    },
+    "profile": {
+        "title": "Profile",
+        "basicInformation": {
+            "title": "Basic Information",
+            "items": [
+                {
+                    "label": "Date of Birth",
+                    "value": "24.03.1996"
+                },
+                {
+                    "label": "City of Residence",
+                    "value": "Ankara"
+                },
+                {
+                    "label": "Educational Background",
+                    "value": "Hacettepe Unv. Bachelor's degree in Biology, 2016"
+                },
+                {
+                    "label": "Preferred Role",
+                    "value": "Frontend, UI"
+                }
+            ]
+        },
+        "aboutMe": {
+            "title": "About Me",
+            "paragraphs": [
+                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
+                "Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!"
+            ]
+        }
+    },
+    "projects": [
+        {
+            "title": "Workintech",
+            "image": "Rectangle-41.jpg",
+            "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+            "technologies": [
+                "react",
+                "redux",
+                "axios"
+            ],
+            "githubLink": "https://github.com",
+            "viewSiteLabel": "View Site",
+            "viewSiteLink": "#"
+        },
+        {
+            "title": "Random Jokes",
+            "image": "Rectangle-42.jpg",
+            "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+            "technologies": [
+                "react",
+                "redux",
+                "axios"
+            ],
+            "githubLink": "https://github.com",
+            "viewSiteLabel": "View Site",
+            "viewSiteLink": "#"
+        },
+        {
+            "title": "Journey",
+            "image": "Rectangle-43.jpg",
+            "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+            "technologies": [
+                "react",
+                "redux",
+                "axios"
+            ],
+            "githubLink": "https://github.com",
+            "viewSiteLabel": "View Site",
+            "viewSiteLink": "#"
+        }
+    ],
+    "footer": {
+        "contactHeader": "Let’s work together on your next product.",
+        "contactEmail": "example@example.com",
+        "personalBlogLabel": "Personal Blog",
+        "links": {
+            "personalBlog": "#",
+            "github": "#",
+            "linkedin": "#"
+        }
+    }
+}

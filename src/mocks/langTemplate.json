@@ -1,0 +1,104 @@
+{
+    "header": {
+        "darkMode": "",
+        "lightMode": "",
+        "skills": "",
+        "projects": "",
+        "hireMe": ""
+    },
+    "introduction": {
+        "name": "",
+        "role1": "",
+        "role2": "",
+        "description": "",
+        "hireMe": ""
+    },
+    "skills": {
+        "title": "",
+        "items": [
+            {
+                "name": "",
+                "description": ""
+            },
+            {
+                "name": "",
+                "description": ""
+            },
+            {
+                "name": "",
+                "description": ""
+            }
+        ]
+    },
+    "profile": {
+        "title": "",
+        "basicInformation": {
+            "title": "",
+            "items": [
+                {
+                    "label": "",
+                    "value": ""
+                },
+                {
+                    "label": "",
+                    "value": ""
+                },
+                {
+                    "label": "",
+                    "value": ""
+                },
+                {
+                    "label": "",
+                    "value": ""
+                }
+            ]
+        },
+        "aboutMe": {
+            "title": "",
+            "paragraphs": [
+                "",
+                ""
+            ]
+        }
+    },
+    "projects": {
+        "title": "",
+        "viewSite": "",
+        "items": [
+            {
+                "title": "",
+                "image": "",
+                "description": "",
+                "technologies": [],
+                "githubLink": "",
+                "viewSiteLink": ""
+            },
+            {
+                "title": "",
+                "image": "",
+                "description": "",
+                "technologies": [],
+                "githubLink": "",
+                "viewSiteLink": ""
+            },
+            {
+                "title": "",
+                "image": "",
+                "description": "",
+                "technologies": [],
+                "githubLink": "",
+                "viewSiteLink": ""
+            }
+        ]
+    },
+    "footer": {
+        "contactHeader": "",
+        "contactEmail": "",
+        "personalBlogLabel": "",
+        "links": {
+            "personalBlog": "",
+            "github": "",
+            "linkedin": ""
+        }
+    }
+}
