@@ -4,14 +4,14 @@
         "lightMode": "GÜNDÜZ MODU",
         "skills": "Beceriler",
         "projects": "Projeler",
-        "hireMe": "Bana ulaşın"
+        "hireMe": "İletişim"
     },
     "introduction": {
         "name": "Almila Su",
         "role1": "Yaratıcı düşünür",
         "role2": "Minimalizm tutkunu",
-        "description": "Merhaba, ben Almila. Full-stack yazılımcıyım. Harika kullanıcı deneyimleri ile sağlam ve ölçeklenebilir frontend ürünleri oluşturacak bir yazılımcı arıyorsanız gelin el sıkışalım.",
-        "hireMe": "Bana ulaşın"
+        "description": "Merhaba, ben Almila. Full-stack yazılımcıyım. Harika kullanıcı deneyimleri ile sağlam ve ölçeklenebilir frontend ürünleri oluşturacak bir yazılımcı arıyorsanız gelin tanışalım.",
+        "hireMe": "İletişim"
     },
     "skills": {
         "title": "Beceriler",
@@ -63,7 +63,7 @@
     },
     "projects": {
         "title": "Projeler",
-        "viewSite": "View Site",
+        "viewSite": "Siteyi Görüntüleyin",
         "items": [
             {
                 "title": "Workintech",

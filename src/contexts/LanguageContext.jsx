@@ -1,4 +1,5 @@
 import { createContext, useContext, useState, useEffect } from 'react';
+import axios from 'axios';
 
 const LanguageContext = createContext();
 
@@ -19,13 +20,13 @@ export const LanguageProvider = ({ children }) => {
     setApiResponse(data);
   };
 
-  /* 
+  
   const fetchData = async () => {
     try {
       const languageFile = await import(`../mocks/${language}.json`);
       const response = await axios.post('https://reqres.in/api/workintech', languageFile);
 
-      updateApiResponse(response.data.content);
+      updateApiResponse(response.data);
     } catch (error) {
       console.error(`Error posting language file for ${language} or fetching data:`, error);
     }
@@ -35,7 +36,7 @@ export const LanguageProvider = ({ children }) => {
   useEffect(() => {
     fetchData();
   }, [language]);
-   */
+
 
   return (
     <LanguageContext.Provider value={{ language, switchLanguage, apiResponse, updateApiResponse }}>

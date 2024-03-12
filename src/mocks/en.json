@@ -1,7 +1,7 @@
 {
     "header": {
-        "darkMode": "Dark Mode",
-        "lightMode": "Light Mode",
+        "darkMode": "DARK MODE",
+        "lightMode": "LIGHT MODE",
         "skills": "Skills",
         "projects": "Projects",
         "hireMe": "Hire me"

@@ -4,12 +4,13 @@ import { useLanguage } from "../contexts/LanguageContext";
 
 export const Header = () => {
     const { darkMode, toggleDarkMode } = useDarkMode();
-    const { language, switchLanguage } = useLanguage();
+    const { language, switchLanguage, apiResponse } = useLanguage();
 
+    const apiHeader = apiResponse.header;
 
-    const skills = document.getElementById('skills');
-    const projects = document.getElementById('projects');
-    const footer = document.getElementById('footer');
+    const skillsComp = document.getElementById('skills');
+    const projectsComp = document.getElementById('projects');
+    const footerComp = document.getElementById('footer');
 
     return (
         <header className='flex flex-col justify-between py-4 px-8 lg:py-8 lg:px-32'>
@@ -28,7 +29,7 @@ export const Header = () => {
                 </div>
 
                 <span className='dark:text-light-mode text-gray-dark'>
-                    {darkMode ? 'LIGHT MODE' : 'DARK MODE'}
+                {apiHeader && (darkMode ? apiHeader.lightMode : apiHeader.darkMode)}
                 </span>
 
                 <span className="text-gray-dark">|</span>
@@ -52,9 +53,9 @@ export const Header = () => {
                     <span className='dark:text-dark-logo-font text-logo-purple transform rotate-45'>A</span>
                 </div>
                 <nav className="flex items-center space-x-4 lg:space-x-16 ml-auto">
-                    <a href="#" onClick={() => { skills.scrollIntoView({ behavior: "smooth" }) }} className='text-gray'>Skills</a>
-                    <a href="#" onClick={() => { projects.scrollIntoView({ behavior: "smooth" }) }} className='text-gray'>Projects</a>
-                    <a href="#" onClick={() => { footer.scrollIntoView({ behavior: "smooth" }) }} className='text-navy-blue px-4 py-2 border border-navy-blue rounded-md dark:bg-white'>Hire me</a>
+                    <a href="#" onClick={() => { skillsComp.scrollIntoView({ behavior: "smooth" }) }} className='text-gray'>{apiHeader && apiHeader.skills}</a>
+                    <a href="#" onClick={() => { projectsComp.scrollIntoView({ behavior: "smooth" }) }} className='text-gray'>{apiHeader && apiHeader.projects}</a>
+                    <a href="#" onClick={() => { footerComp.scrollIntoView({ behavior: "smooth" }) }} className='text-navy-blue px-4 py-2 border border-navy-blue rounded-md dark:bg-white'>{apiHeader && apiHeader.hireMe}</a>
                 </nav>
             </div>
         </header>
