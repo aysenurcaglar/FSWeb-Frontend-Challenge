@@ -1,10 +1,16 @@
 import React from "react";
 import { useDarkMode } from "../contexts/DarkModeContext";
 import { useLanguage } from "../contexts/LanguageContext";
+import { Footer } from "./Footer";
 
 export const Header = () => {
     const { darkMode, toggleDarkMode } = useDarkMode();
     const { language, switchLanguage } = useLanguage();
+
+
+    const skills = document.getElementById('skills');
+    const projects = document.getElementById('projects');
+    const footer = document.getElementById('footer');
 
     return (
         <header className={`flex flex-col justify-between py-4 px-8 lg:py-8 lg:px-16`} >
@@ -28,16 +34,16 @@ export const Header = () => {
 
                 <span className="text-gray-dark">|</span>
 
-                {language === 'en' ? (<span 
+                {language === 'en' ? (<a href="#" 
                 className={`text-gray-dark`}
                 onClick={switchLanguage}>
                     <span className={'dark:text-lilac text-toggle-purple'}>TÜRKÇE</span>'YE GEÇ
-                </span>) :  
-                (<span 
+                </a>) :  
+                (<a href="#" 
                 className={`text-gray-dark`}
                 onClick={switchLanguage}>
                     SWITCH TO <span className={'dark:text-lilac text-toggle-purple'}>ENGLISH</span>
-                </span>)}
+                </a>)}
             </div>
 
             <div className={`flex items-center`}>
@@ -47,9 +53,9 @@ export const Header = () => {
                     <span className={`dark:text-dark-logo-font text-logo-purple transform rotate-45`}>A</span>
                 </div>
                 <nav className="flex items-center space-x-4 lg:space-x-16 ml-auto">
-                    <a href="/#skills" className={`text-gray`}>Skills</a>
-                    <a href="/#projects" className={`text-gray`}>Projects</a>
-                    <a href="#" className={'text-navy-blue px-4 py-2 border border-navy-blue rounded-md dark:bg-white'}>Hire me</a>
+                    <a href= "#" onClick={() => {skills.scrollIntoView({behavior: "smooth"})}} className={`text-gray`}>Skills</a>
+                    <a href="#" onClick={() => {projects.scrollIntoView({behavior: "smooth"})}} className={`text-gray`}>Projects</a>
+                    <a href="#" onClick={() => {footer.scrollIntoView({behavior: "smooth"})}} className={'text-navy-blue px-4 py-2 border border-navy-blue rounded-md dark:bg-white'}>Hire me</a>
                 </nav>
             </div>
         </header>
