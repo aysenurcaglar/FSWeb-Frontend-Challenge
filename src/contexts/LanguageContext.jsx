@@ -24,8 +24,9 @@ export const LanguageProvider = ({ children }) => {
   const fetchData = async () => {
     try {
       const languageFile = await import(`../mocks/${language}.json`);
-      const response = await axios.post('https://reqres.in/api/workintech', languageFile);
+      const response = await axios.post('https://reqres.in/api/users', languageFile);
 
+      console.log('API Response:', response.data);
       updateApiResponse(response.data);
     } catch (error) {
       console.error(`Error posting language file for ${language} or fetching data:`, error);
