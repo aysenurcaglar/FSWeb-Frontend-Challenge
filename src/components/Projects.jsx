@@ -2,7 +2,7 @@ import React from "react";
 
 export const Projects = () => {
     return (
-        <div id="projects" className="px-8 text-left lg:px-16 place-content-between">
+        <div id="projects" className="px-8 text-left lg:px-32 place-content-between">
             <h2 className="font-bold text-black-heading dark:text-bluish-gray text-4xl mb-4">Projects</h2>
             <div className="flex flex-col gap-x-4 lg:gap-x-8 lg:flex-row place-content-between">
                 <div className="pb-8 lg:pb-16">
