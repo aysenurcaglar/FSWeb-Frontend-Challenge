@@ -53,9 +53,9 @@ export const Header = () => {
                     <span className={`dark:text-dark-logo-font text-logo-purple transform rotate-45`}>A</span>
                 </div>
                 <nav className="flex items-center space-x-4 lg:space-x-16 ml-auto">
-                    <a href= "#" onClick={() => {skills.scrollIntoView({behavior: "smooth"})}} className={`text-gray`}>Skills</a>
-                    <a href="#" onClick={() => {projects.scrollIntoView({behavior: "smooth"})}} className={`text-gray`}>Projects</a>
-                    <a href="#" onClick={() => {footer.scrollIntoView({behavior: "smooth"})}} className={'text-navy-blue px-4 py-2 border border-navy-blue rounded-md dark:bg-white'}>Hire me</a>
+                    <a href= "/#skills" onClick={() => {skills.scrollIntoView({behavior: "smooth"})}} className={`text-gray`}>Skills</a>
+                    <a href="/#projects" onClick={() => {projects.scrollIntoView({behavior: "smooth"})}} className={`text-gray`}>Projects</a>
+                    <a href="/#footer" onClick={() => {footer.scrollIntoView({behavior: "smooth"})}} className={'text-navy-blue px-4 py-2 border border-navy-blue rounded-md dark:bg-white'}>Hire me</a>
                 </nav>
             </div>
         </header>

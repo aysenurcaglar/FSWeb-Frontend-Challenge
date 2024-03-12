@@ -3,7 +3,7 @@ import React from "react";
 export const Introduction = () => {
 
     const footer = document.getElementById('footer');
-    
+
     return (
         <div className="p-8 flex flex-col lg:flex-row gap-x-8 lg:gap-x-16 lg:p-16 place-content-between">
             <div className="text-left">
@@ -17,7 +17,7 @@ export const Introduction = () => {
                     <a href="#" className={'text-navy-blue px-4 py-2 border border-navy-blue rounded-md dark:text-dark-mode-hire dark:border-dark-mode-hire dark:bg-dark-gray-button'}>LinkedIn</a>
                 </nav>
             </div>
-            <img className="rounded-2xl mt-8 lg:mt-0" src="../public/image1.jpg" />
+            <img className="rounded-2xl mt-8 lg:mt-0" src="../image1.jpg" />
         </div>
     )
 }
