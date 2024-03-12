@@ -2,16 +2,17 @@ import React from "react";
 import { useLanguage } from "../contexts/LanguageContext";
 
 export const Profile = () => {
-
+    
     const { apiResponse } = useLanguage();
 
     const apiProfile = apiResponse.profile;
     const info = apiProfile.basicInformation;
     const about = apiProfile.aboutMe;
 
-    console.log('apiResponse:', apiResponse);
-    console.log('info:', info);
-    console.log('about:', about);
+    if (!apiResponse || Object.keys(apiResponse).length === 0) {
+        // Handle loading state (e.g., show loading spinner)
+        return <div>Loading...</div>;
+      }
 
     return (
         <div className="px-8 text-left lg:px-32">

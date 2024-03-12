@@ -1,4 +1,5 @@
-import { createContext, useContext, useState, useEffect } from 'react';
+import { createContext, useContext, useEffect } from 'react';
+import useLocalStorage from '../hooks/useLocalStorage';
 import axios from 'axios';
 
 const LanguageContext = createContext();
@@ -8,8 +9,8 @@ export const useLanguage = () => {
 };
 
 export const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState('en');
-  const [apiResponse, setApiResponse] = useState({});
+  const [language, setLanguage] = useLocalStorage('lang', 'en');
+  const [apiResponse, setApiResponse] = useLocalStorage('res', {});
 
   const switchLanguage = () => {
     setLanguage(language === 'en' ? 'tr' : 'en');
@@ -24,7 +25,7 @@ export const LanguageProvider = ({ children }) => {
   const fetchData = async () => {
     try {
       const languageFile = await import(`../mocks/${language}.json`);
-      const response = await axios.post('https://reqres.in/api/users', languageFile);
+      const response = await axios.post('https://reqres.in/api/workintech', languageFile);
 
       console.log('API Response:', response.data);
       updateApiResponse(response.data);
@@ -37,6 +38,8 @@ export const LanguageProvider = ({ children }) => {
   useEffect(() => {
     fetchData();
   }, [language]);
+
+  console.log('apiResponse:', apiResponse);
 
 
   return (
