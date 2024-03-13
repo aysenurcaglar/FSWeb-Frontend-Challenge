@@ -30,9 +30,9 @@ export const Introduction = () => {
                 <nav className="flex flex-wrap place-content-evenly xl:place-content-between max-w-md mt-8">
                     <button
                         onClick={scrollToFooter}
-                        className={'text-white bg-navy-blue h-14 pt-3 w-32 lg:w-36 border border-navy-blue rounded-md dark:text-black-heading dark:bg-dark-mode-hire'}
+                        className={'text-white bg-navy-blue m-2 xl:m-0 h-14 pt-3 px-4 lg:pl-4 w-32 lg:w-36 border border-navy-blue rounded-md dark:text-black-heading dark:bg-dark-mode-hire'}
                     >
-                        <span className="flex items-center justify-center">{hireMe}</span>
+                        {hireMe}
                     </button>
                     <a href={links.github} className={'text-navy-blue m-2 xl:m-0 pt-4 px-4 h-14 lg:pl-6 w-32 lg:w-36 border border-navy-blue rounded-md dark:text-dark-mode-hire dark:border-dark-mode-hire dark:bg-dark-gray-button'}>{darkMode ? (<img src={githubDark} className="inline mr-2" />) : (<img src={githubLight} className="inline mr-2" />)}{github}</a>
                     <a href={links.linkedin} className={'inline-flex text-navy-blue m-2 xl:m-0 pt-4 px-4 h-14 lg:pl-6 w-30 lg:w-36 border border-navy-blue rounded-md dark:text-dark-mode-hire dark:border-dark-mode-hire dark:bg-dark-gray-button'}>{darkMode ? (<img src={LinkedInDark} className="inline-flex mr-2 mb-4" />) : (<img src={LinkedInLight} className="inline-flex mr-2 mb-4" />)}{linkedin}</a>
