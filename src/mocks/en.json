@@ -1,8 +1,8 @@
 {
     "notifications": {
-        "pending": "Please wait...",
-        "success": "Language switch successful!",
-        "error": "We encountered an issue :("
+        "pending": "Lütfen bekleyin...",
+        "success": "🦄 Dil başarıyla değiştirildi!",
+        "error": "Bir sorun var :("
     },
     "header": {
         "darkMode": "DARK MODE",

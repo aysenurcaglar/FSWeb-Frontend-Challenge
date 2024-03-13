@@ -1,6 +1,7 @@
 import React from "react";
 import { useDarkMode } from "../contexts/DarkModeContext";
 import { useLanguage } from "../contexts/LanguageContext";
+import { toast } from "react-toastify";
 
 export const Header = () => {
     const { darkMode, toggleDarkMode } = useDarkMode();
@@ -14,6 +15,14 @@ export const Header = () => {
             section.scrollIntoView({ behavior: "smooth" });
         }
     };
+
+    const handleClick = () => {
+        switchLanguage();
+        const notif = toast.loading('Please wait...', {pauseOnHover: false, theme: darkMode ? "dark" : "light",});
+        {Object.keys(apiResponse).length !== 0 ?
+            (toast.update(notif, { render: apiResponse.notifications.success, type: "success", isLoading: false, delay: 1000, autoClose: 2000, pauseOnHover: false, theme: darkMode ? "dark" : "light", })) : (toast.update(notif, { render: 'We encountered an issue :(', type: "error", isLoading: false, autoClose: 2000, delay: 1000, pauseOnHover: false, theme: darkMode ? "dark" : "light", }))
+        }
+    }; 
 
     return (
         <header className='flex flex-col max-w-[80%] xl:max-w-6xl m-auto justify-between'>
@@ -37,7 +46,7 @@ export const Header = () => {
 
                 <span className="text-gray-dark">|</span>
 
-                <a href="#" onClick={switchLanguage}>
+                <a href="#" onClick={handleClick}>
                 <span className='dark:text-lilac text-toggle-purple font-medium tracking-wider'>{apiHeader?.language}</span>
                 </a>
             </div>

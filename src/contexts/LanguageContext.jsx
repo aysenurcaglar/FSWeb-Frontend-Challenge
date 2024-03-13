@@ -1,7 +1,6 @@
 import { createContext, useContext, useEffect, useState } from 'react';
 import useLocalStorage from '../hooks/useLocalStorage';
 import axios from 'axios';
-import { toast } from 'react-toastify';
 
 const LanguageContext = createContext();
 
@@ -21,9 +20,6 @@ export const LanguageProvider = ({ children }) => {
   
   const fetchData = async () => {
     try {
-
-      //const notif = toast.loading(apiResponse.notifications.pending);
-
       const languageFile = await import(`../mocks/${language}.json`);
 
       // await new Promise(resolve => setTimeout(resolve, 1000));
@@ -32,10 +28,9 @@ export const LanguageProvider = ({ children }) => {
 
       console.log('API Response:', response.data);
       updateApiResponse(response.data);
-      //toast.update(notif, { render: apiResponse.notifications.success, type: "success", isLoading: false, autoClose: 2000 });
+
     } catch (error) {
       console.error(`Error posting language file for ${language} or fetching data:`, error);
-      //toast.update(notif, { render: apiResponse.notifications.error, type: "error", isLoading: false, autoClose: 2000 });
     } finally {
       setLoading(false);
     }
