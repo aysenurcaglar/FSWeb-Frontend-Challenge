@@ -11,7 +11,7 @@ export const Introduction = () => {
 
     const { darkMode } = useDarkMode();
     const { apiResponse } = useLanguage();
-    const { name, role1, role2, description, hireMe, github, linkedin, links } = apiResponse?.introduction;
+    const { name, heading1, heading2, description, hireMe, github, linkedin, links } = apiResponse?.introduction;
 
     const scrollToFooter = () => {
         const footer = document.getElementById('footer');
@@ -21,11 +21,11 @@ export const Introduction = () => {
     };
 
     return (
-        <div className="p-8 flex flex-col lg:flex-row gap-x-8 lg:gap-x-16 lg:py-16 lg:px-32 place-content-between">
+        <div className="flex flex-col lg:flex-row gap-x-8 lg:gap-x-16 max-w-[80%] xl:max-w-6xl m-auto py-16 place-content-between">
             <div className="text-left">
                 <p className="mb-8 text-dark-purple dark:text-dark-mode-name">————— {name}</p>
-                <h1 className="font-bold text-black-heading dark:text-bluish-gray lg:text-6xl">{role1}</h1>
-                <h1 className="font-bold text-black-heading dark:text-bluish-gray lg:text-6xl">{role2}</h1>
+                <h1 className="font-bold text-black-heading dark:text-bluish-gray lg:text-6xl">{heading1}</h1>
+                <h1 className="font-bold text-black-heading dark:text-bluish-gray lg:text-6xl">{heading2}</h1>
                 <p className="mt-8 text-gray text-wrap dark:text-white lg:max-w-lg">{description}</p>
                 <nav className="flex flex-wrap place-content-evenly lg:place-content-between max-w-md mt-8">
                     <button
@@ -38,7 +38,7 @@ export const Introduction = () => {
                     <a href={links.linkedin} className={'text-navy-blue m-2 lg:m-0 pt-4 px-4 h-14 lg:pl-6 w-30 lg:w-36 border border-navy-blue rounded-md dark:text-dark-mode-hire dark:border-dark-mode-hire dark:bg-dark-gray-button'}>{darkMode ? (<img src={LinkedInDark} className="inline mr-2" />) : (<img src={LinkedInLight} className="inline mr-2" />)}{linkedin}</a>
                 </nav>
             </div>
-            <img className="rounded-2xl mt-8 lg:mt-0" src="../image1.jpg" />
+            <img className="rounded-2xl mt-8 lg:mt-0 w-min" src="../image1.jpg" />
         </div>
     )
 }

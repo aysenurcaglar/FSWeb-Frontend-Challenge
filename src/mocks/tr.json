@@ -9,10 +9,10 @@
 
     },
     "introduction": {
-        "name": "Almila Su",
-        "role1": "Yaratıcı çözümler",
-        "role2": "Minimalist tasarımlar",
-        "description": "Merhaba, ben Almila. Full-stack yazılımcıyım. Harika kullanıcı deneyimleri ile sağlam ve ölçeklenebilir frontend ürünleri oluşturacak bir yazılımcı arıyorsanız gelin tanışalım.",
+        "name": "Ayşe Nur",
+        "heading1": "Yaratıcı çözümler",
+        "heading2": "Minimalist tasarımlar",
+        "description": "Merhaba, ben Ayşe. Frontend yazılımcıyım. Harika kullanıcı deneyimleri ile sağlam ve ölçeklenebilir frontend ürünleri oluşturacak bir yazılımcı arıyorsanız gelin tanışalım.",
         "hireMe": "İletişim",
         "github": "Github",
         "linkedin": "LinkedIn",
@@ -30,11 +30,11 @@
             },
             {
                 "name": "React.Js",
-                "description": "Türemiş sıfat gördüm gazete değerli olduğu için adanaya telefonu lakin layıkıyla filmini mi masanın."
+                "description": "Çünkü bilgisayarı salladı hesap makinesi ve masaya doğru bahar mıknatıslı okuma sayfası beğendim."
             },
             {
                 "name": "Node.Js",
-                "description": "Türemiş sıfat gördüm gazete değerli olduğu için adanaya telefonu lakin layıkıyla filmini mi masanın."
+                "description": "Masaya doğru ona doğru gördüm sıradanlıktan duyulmamış ona doğru telefonu dışarı çıktılar ama."
             }
         ]
     },
@@ -45,15 +45,15 @@
             "items": [
                 {
                     "label": "Doğum Tarihi",
-                    "value": "24.03.1996"
+                    "value": "18.09.1997"
                 },
                 {
                     "label": "İkamet Şehri",
-                    "value": "Ankara"
+                    "value": "Kocaeli"
                 },
                 {
                     "label": "Eğitim Durumu",
-                    "value": "Hacettepe Ünv. Biyoloji Lisans, 2016"
+                    "value": "Boğaziçi Ünv. Çeviribilim Lisans, 2022"
                 },
                 {
                     "label": "Tercih Ettiği Rol",

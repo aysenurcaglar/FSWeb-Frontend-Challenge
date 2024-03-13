@@ -12,7 +12,13 @@
         "role1": "",
         "role2": "",
         "description": "",
-        "hireMe": ""
+        "hireMe": "",
+        "github": "",
+        "linkedin": "",
+        "links": {
+            "github": "",
+            "linkedin": ""
+        }
     },
     "skills": {
         "title": "",
@@ -97,7 +103,9 @@
     "footer": {
         "contactHeader": "",
         "contactEmail": "",
-        "personalBlogLabel": "",
+        "personalBlog": "",
+        "github": "",
+        "linkedin": "",
         "links": {
             "personalBlog": "",
             "github": "",

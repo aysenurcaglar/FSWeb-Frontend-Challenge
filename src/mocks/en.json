@@ -8,10 +8,10 @@
         "hireMe": "Hire me"
     },
     "introduction": {
-        "name": "Almila Su",
-        "role1": "Creative thinker",
-        "role2": "Minimalism lover",
-        "description": "Hi, I’m Almila. I’m a full-stack developer. If you are looking for a Developer to craft solid and scalable frontend products with great user experiences, let’s shake hands.",
+        "name": "Ayse Nur",
+        "heading1": "Creative thinker",
+        "heading2": "Minimalism lover",
+        "description": "Hi, I’m Ayse. I’m a frontend developer. If you are looking for a developer to craft solid and scalable frontend products with great user experiences, let’s shake hands.",
         "hireMe": "Hire me",
         "github": "Github",
         "linkedin": "LinkedIn",
@@ -29,11 +29,11 @@
             },
             {
                 "name": "React.Js",
-                "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                "description": "Aliquam eleifend nibh vel tellus ullamcorper dignissim. Nam nec odio velit. Nulla quam quam, elementum ultrices."
             },
             {
                 "name": "Node.Js",
-                "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                "description": "Sed laoreet mollis erat, efficitur iaculis nulla porttitor non. Curabitur eu sodales odio. Fusce facilisis metus."
             }
         ]
     },
@@ -44,15 +44,15 @@
             "items": [
                 {
                     "label": "Date of Birth",
-                    "value": "24.03.1996"
+                    "value": "18.09.1997"
                 },
                 {
                     "label": "City of Residence",
-                    "value": "Ankara"
+                    "value": "Kocaeli"
                 },
                 {
                     "label": "Educational Background",
-                    "value": "Hacettepe Unv. Bachelor's degree in Biology, 2016"
+                    "value": "Bogazici Unv. Bachelor's degree in Translation and Interpreting Studies, 2022"
                 },
                 {
                     "label": "Preferred Role",

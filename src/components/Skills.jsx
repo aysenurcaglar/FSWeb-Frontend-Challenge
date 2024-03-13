@@ -8,7 +8,7 @@ export const Skills = () => {
     const apiSkills = apiResponse.skills;
 
     return (
-        <div id="skills" className="px-8 text-left lg:px-32 place-content-between">
+        <div id="skills" className="text-left max-w-[80%] xl:max-w-6xl m-auto place-content-between">
             <h2 className="font-bold text-black-heading dark:text-bluish-gray text-4xl mb-4">{apiSkills?.title}</h2>
             <div className="flex flex-col gap-x-4 lg:gap-x-8 lg:flex-row">
                 {apiSkills?.items?.map((skill, index) => (

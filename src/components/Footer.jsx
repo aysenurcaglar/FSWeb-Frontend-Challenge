@@ -3,20 +3,22 @@ import { useLanguage } from "../contexts/LanguageContext";
 
 export const Footer = () => {
 
-    const { apiResponse } = useLanguage();
-    const { contactHeader, contactEmail, personalBlog, github, linkedin, links } = apiResponse?.footer;
+  const { apiResponse } = useLanguage();
+  const { contactHeader, contactEmail, personalBlog, github, linkedin, links } = apiResponse?.footer;
 
-    return (
-        <footer id="footer" className="bg-gray-light dark:bg-dark-footer-bg w-full p-8 lg:py-16 lg:px-32">
-          <h2 className="font-bold text-black-heading dark:text-bluish-gray text-left text-4xl max-w-md">{contactHeader}</h2>
-          <div className="flex flex-col lg:flex-row pt-16 pb-8">
-            <a className="text-mail-red dark:text-lilac text-left mb-16 lg:mb-0 mr-auto" href={`mailto:${contactEmail}`}>👉 <span className="underline">{contactEmail}</span></a>
-            <nav className="flex items-center space-x-4 lg:space-x-8 ml-auto">
-              <a href={links.personalBlog} className='text-black-heading dark:text-dark-mode-hire'>{personalBlog}</a>
-              <a href={links.github} className='text-green dark:text-dark-mode-green'>{github}</a>
-              <a href={links.linkedin} className='text-linkedin-blue dark:dark-mode-linkedin'>{linkedin}</a>
-            </nav>
-          </div>
-        </footer>
-      );
+  return (
+    <footer id="footer" className="bg-gray-light dark:bg-dark-footer-bg w-full">
+      <div className="max-w-[80%] xl:max-w-6xl m-auto py-16">
+        <h2 className="font-bold text-black-heading dark:text-bluish-gray text-left text-4xl max-w-md">{contactHeader}</h2>
+        <div className="flex flex-col lg:flex-row pt-16 pb-8">
+          <a className="text-mail-red dark:text-lilac text-left mb-16 lg:mb-0 mr-auto" href={`mailto:${contactEmail}`}>👉 <span className="underline">{contactEmail}</span></a>
+          <nav className="flex items-center space-x-4 lg:space-x-8 ml-auto">
+            <a href={links.personalBlog} className='text-black-heading dark:text-dark-mode-hire'>{personalBlog}</a>
+            <a href={links.github} className='text-green dark:text-dark-mode-green'>{github}</a>
+            <a href={links.linkedin} className='text-linkedin-blue dark:dark-mode-linkedin'>{linkedin}</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  );
 }
