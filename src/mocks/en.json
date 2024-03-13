@@ -61,47 +61,50 @@
             ]
         }
     },
-    "projects": [
-        {
-            "title": "Workintech",
-            "image": "Rectangle-41.jpg",
-            "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-            "technologies": [
-                "react",
-                "redux",
-                "axios"
-            ],
-            "githubLink": "https://github.com",
-            "viewSiteLabel": "View Site",
-            "viewSiteLink": "#"
-        },
-        {
-            "title": "Random Jokes",
-            "image": "Rectangle-42.jpg",
-            "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-            "technologies": [
-                "react",
-                "redux",
-                "axios"
-            ],
-            "githubLink": "https://github.com",
-            "viewSiteLabel": "View Site",
-            "viewSiteLink": "#"
-        },
-        {
-            "title": "Journey",
-            "image": "Rectangle-43.jpg",
-            "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
-            "technologies": [
-                "react",
-                "redux",
-                "axios"
-            ],
-            "githubLink": "https://github.com",
-            "viewSiteLabel": "View Site",
-            "viewSiteLink": "#"
-        }
-    ],
+    "projects": {
+        "title": "Projeler",
+        "items": [
+            {
+                "title": "Workintech",
+                "image": "Rectangle-41.jpg",
+                "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+                "technologies": [
+                    "react",
+                    "redux",
+                    "axios"
+                ],
+                "githubLink": "https://github.com",
+                "viewSiteLabel": "View Site",
+                "viewSiteLink": "#"
+            },
+            {
+                "title": "Random Jokes",
+                "image": "Rectangle-42.jpg",
+                "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+                "technologies": [
+                    "react",
+                    "redux",
+                    "axios"
+                ],
+                "githubLink": "https://github.com",
+                "viewSiteLabel": "View Site",
+                "viewSiteLink": "#"
+            },
+            {
+                "title": "Journey",
+                "image": "Rectangle-43.jpg",
+                "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
+                "technologies": [
+                    "react",
+                    "redux",
+                    "axios"
+                ],
+                "githubLink": "https://github.com",
+                "viewSiteLabel": "View Site",
+                "viewSiteLink": "#"
+            }
+        ]
+    },
     "footer": {
         "contactHeader": "Let’s work together on your next product.",
         "contactEmail": "example@example.com",

@@ -8,8 +8,8 @@
     },
     "introduction": {
         "name": "Almila Su",
-        "role1": "Yaratıcı düşünür",
-        "role2": "Minimalizm tutkunu",
+        "role1": "Yaratıcı çözümler",
+        "role2": "Minimalist tasarımlar",
         "description": "Merhaba, ben Almila. Full-stack yazılımcıyım. Harika kullanıcı deneyimleri ile sağlam ve ölçeklenebilir frontend ürünleri oluşturacak bir yazılımcı arıyorsanız gelin tanışalım.",
         "hireMe": "İletişim"
     },
@@ -63,7 +63,6 @@
     },
     "projects": {
         "title": "Projeler",
-        "viewSite": "Siteyi Görüntüleyin",
         "items": [
             {
                 "title": "Workintech",
@@ -75,7 +74,9 @@
                     "axios"
                 ],
                 "githubLink": "https://github.com",
+                "viewSiteLabel": "Siteyi Görüntüleyin",
                 "viewSiteLink": "#"
+                
             },
             {
                 "title": "Random Jokes",
@@ -87,6 +88,7 @@
                     "axios"
                 ],
                 "githubLink": "https://github.com",
+                "viewSiteLabel": "Siteyi Görüntüleyin",
                 "viewSiteLink": "#"
             },
             {
@@ -99,6 +101,7 @@
                     "axios"
                 ],
                 "githubLink": "https://github.com",
+                "viewSiteLabel": "Siteyi Görüntüleyin",
                 "viewSiteLink": "#"
             }
         ]
