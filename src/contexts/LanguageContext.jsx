@@ -1,6 +1,7 @@
 import { createContext, useContext, useEffect, useState } from 'react';
 import useLocalStorage from '../hooks/useLocalStorage';
 import axios from 'axios';
+import { toast } from 'react-toastify';
 
 const LanguageContext = createContext();
 
@@ -22,7 +23,7 @@ export const LanguageProvider = ({ children }) => {
     try {
       const languageFile = await import(`../mocks/${language}.json`);
 
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      // await new Promise(resolve => setTimeout(resolve, 1000));
 
       const response = await axios.post('https://reqres.in/api/workintech', languageFile);
 

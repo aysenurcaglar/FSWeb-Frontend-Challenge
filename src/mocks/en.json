@@ -4,6 +4,7 @@
         "lightMode": "LIGHT MODE",
         "skills": "Skills",
         "projects": "Projects",
+        "language": "TÜRKÇE",
         "hireMe": "Hire me"
     },
     "introduction": {
@@ -62,7 +63,7 @@
         }
     },
     "projects": {
-        "title": "Projeler",
+        "title": "Projects",
         "items": [
             {
                 "title": "Workintech",

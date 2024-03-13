@@ -4,6 +4,7 @@
         "lightMode": "",
         "skills": "",
         "projects": "",
+        "language": "",
         "hireMe": ""
     },
     "introduction": {
@@ -63,7 +64,6 @@
     },
     "projects": {
         "title": "",
-        "viewSite": "",
         "items": [
             {
                 "title": "",
@@ -71,6 +71,7 @@
                 "description": "",
                 "technologies": [],
                 "githubLink": "",
+                "viewSiteLabel": "",
                 "viewSiteLink": ""
             },
             {
@@ -79,6 +80,7 @@
                 "description": "",
                 "technologies": [],
                 "githubLink": "",
+                "viewSiteLabel": "",
                 "viewSiteLink": ""
             },
             {
@@ -87,6 +89,7 @@
                 "description": "",
                 "technologies": [],
                 "githubLink": "",
+                "viewSiteLabel": "",
                 "viewSiteLink": ""
             }
         ]

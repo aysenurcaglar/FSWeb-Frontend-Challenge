@@ -8,9 +8,12 @@ export const Header = () => {
 
     const apiHeader = apiResponse.header;
 
-    const skillsComp = document.getElementById('skills');
-    const projectsComp = document.getElementById('projects');
-    const footerComp = document.getElementById('footer');
+    const scrollToSection = (id) => {
+        const section = document.getElementById(id);
+        if (section) {
+            section.scrollIntoView({ behavior: "smooth" });
+        }
+    };
 
     return (
         <header className='flex flex-col justify-between py-4 px-8 lg:py-8 lg:px-32'>
@@ -24,26 +27,19 @@ export const Header = () => {
                         style={{ transform: darkMode ? 'translateX(30%)' : 'translateX(200%)', }}
                     ></div>
                     {darkMode && (
-                        <div className="absolute w-2.5 h-2.5 rounded-full bg-toggle-gray left-2 transition-opacity duration-400 ease-in"></div>
+                        <div className="absolute w-2.5 h-2.5 rounded-full bg-toggle-gray left-2"></div>
                     )}
                 </div>
 
-                <span className='dark:text-light-mode text-gray-dark'>
-                {apiHeader && (darkMode ? apiHeader.lightMode : apiHeader.darkMode)}
+                <span className='dark:text-light-mode text-gray-dark font-medium tracking-wider'>
+                    {darkMode ? apiHeader?.lightMode : apiHeader?.darkMode}
                 </span>
 
                 <span className="text-gray-dark">|</span>
 
-                {language === 'en' ? (<a href="#"
-                    className={`text-gray-dark`}
-                    onClick={switchLanguage}>
-                    <span className='dark:text-lilac text-toggle-purple'>TÜRKÇE</span>'YE GEÇ
-                </a>) :
-                    (<a href="#"
-                        className={`text-gray-dark`}
-                        onClick={switchLanguage}>
-                        SWITCH TO <span className='dark:text-lilac text-toggle-purple'>ENGLISH</span>
-                    </a>)}
+                <a href="#" onClick={switchLanguage}>
+                <span className='dark:text-lilac text-toggle-purple font-medium tracking-wider'>{apiHeader.language}</span>
+                </a>
             </div>
 
             <div className='flex items-center'>
@@ -53,9 +49,9 @@ export const Header = () => {
                     <span className='dark:text-dark-logo-font text-logo-purple transform rotate-45'>A</span>
                 </div>
                 <nav className="flex items-center space-x-4 lg:space-x-16 ml-auto">
-                    <a href="#" onClick={() => { skillsComp.scrollIntoView({ behavior: "smooth" }) }} className='text-gray'>{apiHeader && apiHeader.skills}</a>
-                    <a href="#" onClick={() => { projectsComp.scrollIntoView({ behavior: "smooth" }) }} className='text-gray'>{apiHeader && apiHeader.projects}</a>
-                    <a href="#" onClick={() => { footerComp.scrollIntoView({ behavior: "smooth" }) }} className='text-navy-blue px-4 py-2 border border-navy-blue rounded-md dark:bg-white'>{apiHeader && apiHeader.hireMe}</a>
+                    <a href="#" onClick={() => scrollToSection('skills')} className='text-gray-dark'>{apiHeader?.skills}</a>
+                    <a href="#" onClick={() => scrollToSection('projects')} className='text-gray'>{apiHeader?.projects}</a>
+                    <a href="#" onClick={() => scrollToSection('footer')} className='text-navy-blue px-4 py-2 border border-navy-blue rounded-md dark:bg-white'>{apiHeader?.hireMe}</a>
                 </nav>
             </div>
         </header>
