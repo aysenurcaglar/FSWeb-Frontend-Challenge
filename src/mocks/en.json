@@ -12,7 +12,13 @@
         "role1": "Creative thinker",
         "role2": "Minimalism lover",
         "description": "Hi, I’m Almila. I’m a full-stack developer. If you are looking for a Developer to craft solid and scalable frontend products with great user experiences, let’s shake hands.",
-        "hireMe": "Hire me"
+        "hireMe": "Hire me",
+        "github": "Github",
+        "linkedin": "LinkedIn",
+        "links": {
+            "github": "https://github.com/aysenurcaglar/",
+            "linkedin": "https://www.linkedin.com/in/ayse-nur-caglar/"
+        }
     },
     "skills": {
         "title": "Skills",
@@ -74,9 +80,9 @@
                     "redux",
                     "axios"
                 ],
-                "githubLink": "https://github.com",
+                "githubLink": "https://github.com/aysenurcaglar/FSWeb-S9-Sprint-Challenge",
                 "viewSiteLabel": "View Site",
-                "viewSiteLink": "#"
+                "viewSiteLink": "https://fs-web-s9-sprint-challenge-sooty.vercel.app/"
             },
             {
                 "title": "Random Jokes",
@@ -109,11 +115,13 @@
     "footer": {
         "contactHeader": "Let’s work together on your next product.",
         "contactEmail": "example@example.com",
-        "personalBlogLabel": "Personal Blog",
+        "personalBlog": "Personal Blog",
+        "github": "Github",
+        "linkedin": "LinkedIn",
         "links": {
             "personalBlog": "#",
-            "github": "#",
-            "linkedin": "#"
+            "github": "https://github.com/aysenurcaglar/",
+            "linkedin": "https://www.linkedin.com/in/ayse-nur-caglar/"
         }
     }
 }

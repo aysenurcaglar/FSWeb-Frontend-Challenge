@@ -4,9 +4,9 @@ import { useLanguage } from "../contexts/LanguageContext";
 
 export const Header = () => {
     const { darkMode, toggleDarkMode } = useDarkMode();
-    const { language, switchLanguage, apiResponse } = useLanguage();
+    const { switchLanguage, apiResponse } = useLanguage();
 
-    const apiHeader = apiResponse.header;
+    const apiHeader = apiResponse?.header;
 
     const scrollToSection = (id) => {
         const section = document.getElementById(id);

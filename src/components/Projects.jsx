@@ -5,13 +5,13 @@ export const Projects = () => {
 
     const { apiResponse } = useLanguage();
 
-    const apiProjects = apiResponse.projects;
+    const {title, items} = apiResponse?.projects;
 
     return (
         <div id="projects" className="px-8 text-left lg:px-32 place-content-between">
-            <h2 className="font-bold text-black-heading dark:text-bluish-gray text-4xl mb-8">{apiProjects?.title}</h2>
+            <h2 className="font-bold text-black-heading dark:text-bluish-gray text-4xl mb-8">{title}</h2>
             <div className="flex flex-col gap-x-4 lg:gap-x-8 lg:flex-row place-content-between">
-                {apiProjects?.items?.map((project, index) => (
+                {items?.map((project, index) => (
                     <div key={index} className="pb-8 lg:pb-16">
                         <img src={`./${project.image}`} alt={project.title} />
                         <h3 className="text-dark-purple dark:text-dark-mode-name text-2xl my-4 font-medium">{project.title}</h3>
