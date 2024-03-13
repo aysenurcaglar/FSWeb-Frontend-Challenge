@@ -1,4 +1,9 @@
 {
+    "notifications": {
+        "pending": "Please wait...",
+        "success": "Language switch successful!",
+        "error": "We encountered an issue :("
+    },
     "header": {
         "darkMode": "DARK MODE",
         "lightMode": "LIGHT MODE",

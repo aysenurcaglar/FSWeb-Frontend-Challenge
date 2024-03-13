@@ -21,24 +21,24 @@ export const Introduction = () => {
     };
 
     return (
-        <div className="flex flex-col lg:flex-row gap-x-8 lg:gap-x-16 max-w-[80%] xl:max-w-6xl m-auto py-16 place-content-between">
+        <div className="flex flex-col lg:flex-row gap-x-8 max-w-[80%] xl:max-w-6xl m-auto py-16 place-content-between">
             <div className="text-left">
                 <p className="mb-8 text-dark-purple dark:text-dark-mode-name">————— {name}</p>
                 <h1 className="font-bold text-black-heading dark:text-bluish-gray lg:text-6xl">{heading1}</h1>
                 <h1 className="font-bold text-black-heading dark:text-bluish-gray lg:text-6xl">{heading2}</h1>
                 <p className="mt-8 text-gray text-wrap dark:text-white lg:max-w-lg">{description}</p>
-                <nav className="flex flex-wrap place-content-evenly lg:place-content-between max-w-md mt-8">
+                <nav className="flex flex-wrap place-content-evenly xl:place-content-between max-w-md mt-8">
                     <button
                         onClick={scrollToFooter}
-                        className={'text-white bg-navy-blue m-2 lg:m-0 h-14 pt-2 px-4 lg:pl-4 w-32 lg:w-36 border border-navy-blue rounded-md dark:text-black-heading dark:bg-dark-mode-hire'}
+                        className={'text-white bg-navy-blue m-2 xl:m-0 h-14 pt-2 px-4 lg:pl-4 w-32 lg:w-36 border border-navy-blue rounded-md dark:text-black-heading dark:bg-dark-mode-hire'}
                     >
                         {hireMe}
                     </button>
-                    <a href={links.github} className={'text-navy-blue m-2 lg:m-0 pt-4 px-4 h-14 lg:pl-6 w-32 lg:w-36 border border-navy-blue rounded-md dark:text-dark-mode-hire dark:border-dark-mode-hire dark:bg-dark-gray-button'}>{darkMode ? (<img src={githubDark} className="inline mr-2" />) : (<img src={githubLight} className="inline mr-2" />)}{github}</a>
-                    <a href={links.linkedin} className={'text-navy-blue m-2 lg:m-0 pt-4 px-4 h-14 lg:pl-6 w-30 lg:w-36 border border-navy-blue rounded-md dark:text-dark-mode-hire dark:border-dark-mode-hire dark:bg-dark-gray-button'}>{darkMode ? (<img src={LinkedInDark} className="inline mr-2" />) : (<img src={LinkedInLight} className="inline mr-2" />)}{linkedin}</a>
+                    <a href={links.github} className={'text-navy-blue m-2 xl:m-0 pt-4 px-4 h-14 lg:pl-6 w-32 lg:w-36 border border-navy-blue rounded-md dark:text-dark-mode-hire dark:border-dark-mode-hire dark:bg-dark-gray-button'}>{darkMode ? (<img src={githubDark} className="inline mr-2" />) : (<img src={githubLight} className="inline mr-2" />)}{github}</a>
+                    <a href={links.linkedin} className={'text-navy-blue m-2 xl:m-0 pt-4 px-4 h-14 lg:pl-6 w-30 lg:w-36 border border-navy-blue rounded-md dark:text-dark-mode-hire dark:border-dark-mode-hire dark:bg-dark-gray-button'}>{darkMode ? (<img src={LinkedInDark} className="inline mr-2" />) : (<img src={LinkedInLight} className="inline mr-2" />)}{linkedin}</a>
                 </nav>
             </div>
-            <img className="rounded-2xl mt-8 lg:mt-0 w-min" src="../image1.jpg" />
+            <img className="rounded-2xl mt-8 lg:mt-0 max-w-[476px] max-h-[375px]" src="../image1.jpg" />
         </div>
     )
 }

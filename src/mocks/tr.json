@@ -1,4 +1,9 @@
 {
+    "notifications": {
+        "pending": "Lütfen bekleyin...",
+        "success": "Dil başarıyla değiştirildi!",
+        "error": "Bir sorun var :("
+    },
     "header": {
         "darkMode": "GECE MODU",
         "lightMode": "GÜNDÜZ MODU",
