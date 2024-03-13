@@ -98,9 +98,9 @@
                     "redux",
                     "axios"
                 ],
-                "githubLink": "https://github.com",
+                "githubLink": "https://github.com/aysenurcaglar/fsweb-s7-challenge-pizza",
                 "viewSiteLabel": "View Site",
-                "viewSiteLink": "#"
+                "viewSiteLink": "https://fsweb-s7-challenge-pizza-drab.vercel.app/"
             },
             {
                 "title": "Journey",
@@ -111,9 +111,9 @@
                     "redux",
                     "axios"
                 ],
-                "githubLink": "https://github.com",
+                "githubLink": "https://github.com/aysenurcaglar/s10d3t1",
                 "viewSiteLabel": "View Site",
-                "viewSiteLink": "#"
+                "viewSiteLink": "https://s10d3t1.vercel.app/"
             }
         ]
     },
