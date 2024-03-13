@@ -36,7 +36,7 @@ export const Header = () => {
                         style={{ transform: darkMode ? 'translateX(30%)' : 'translateX(200%)', }}
                     />
                     {darkMode && (
-                        <div className="absolute w-2.5 h-2.5 rounded-full bg-toggle-gray left-2"></div>
+                        <div className="absolute w-2.5 h-2.5 rounded-full bg-toggle-gray left-2" />
                     )}
                 </div>
 
@@ -46,8 +46,8 @@ export const Header = () => {
 
                 <span className="text-gray-dark">|</span>
 
-                <a href="#" onClick={handleClick}>
-                <span className='dark:text-lilac text-toggle-purple font-medium tracking-wider'>{apiHeader?.language}</span>
+                <a href="#" onClick={handleClick} className='dark:text-lilac text-toggle-purple font-medium tracking-wider'>
+                {apiHeader?.language}
                 </a>
             </div>
 
