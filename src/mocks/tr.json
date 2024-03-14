@@ -1,9 +1,4 @@
 {
-    "notifications": {
-        "pending": "Please wait...",
-        "success": "🦄 Language switch successful!",
-        "error": "We encountered an issue :("
-    },
     "header": {
         "darkMode": "GECE MODU",
         "lightMode": "GÜNDÜZ MODU",
@@ -130,5 +125,10 @@
             "github": "https://github.com/aysenurcaglar/",
             "linkedin": "https://www.linkedin.com/in/ayse-nur-caglar/"
         }
+    },
+    "notifications": {
+        "pending": "Please wait...",
+        "success": "🦄 Language switch successful!",
+        "error": "We encountered an issue :("
     }
 }
