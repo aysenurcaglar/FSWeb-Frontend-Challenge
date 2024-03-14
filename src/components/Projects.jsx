@@ -22,7 +22,7 @@ export const Projects = () => {
                             ))}
                         </div>
                         <div className="flex place-content-between underline">
-                            <a className="text-navy-blue dark:text-dark-mode-hire" href={project.githubLink}>Github</a>
+                            <a className="text-navy-blue dark:text-dark-mode-hire" href={project.githubLink}>{project.github}</a>
                             <a className="text-navy-blue dark:text-dark-mode-hire" href={project.viewSiteLink}>{project.viewSiteLabel}</a>
                         </div>
                     </div>

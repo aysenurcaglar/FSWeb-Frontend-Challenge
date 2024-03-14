@@ -85,6 +85,7 @@
                     "redux",
                     "axios"
                 ],
+                "github": "Github",
                 "githubLink": "https://github.com/aysenurcaglar/FSWeb-S9-Sprint-Challenge",
                 "viewSiteLabel": "View Site",
                 "viewSiteLink": "https://fs-web-s9-sprint-challenge-sooty.vercel.app/"
@@ -98,6 +99,7 @@
                     "redux",
                     "axios"
                 ],
+                "github": "Github",
                 "githubLink": "https://github.com/aysenurcaglar/fsweb-s7-challenge-pizza",
                 "viewSiteLabel": "View Site",
                 "viewSiteLink": "https://fsweb-s7-challenge-pizza-drab.vercel.app/"
@@ -111,6 +113,7 @@
                     "redux",
                     "axios"
                 ],
+                "github": "Github",
                 "githubLink": "https://github.com/aysenurcaglar/s10d3t1",
                 "viewSiteLabel": "View Site",
                 "viewSiteLink": "https://s10d3t1.vercel.app/"
