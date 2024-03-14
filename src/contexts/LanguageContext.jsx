@@ -17,7 +17,6 @@ export const LanguageProvider = ({ children }) => {
     setApiResponse(data);
   };
 
-  
   const fetchData = async () => {
     try {
       const languageFile = await import(`../mocks/${language}.json`);
@@ -30,18 +29,15 @@ export const LanguageProvider = ({ children }) => {
       updateApiResponse(response.data);
 
     } catch (error) {
-      console.error(`Error posting language file for ${language} or fetching data:`, error);
+      console.error(error);
     } finally {
       setLoading(false);
     }
   };
  
-
   useEffect(() => {
     fetchData();
   }, [language]);
-
-  console.log('apiResponse:', apiResponse);
 
   const switchLanguage = () => {
     setLanguage(language === 'en' ? 'tr' : 'en');
@@ -50,7 +46,6 @@ export const LanguageProvider = ({ children }) => {
   if (loading) {
     return <div>Loading...</div>
   }
-
 
   return (
     <LanguageContext.Provider value={{ language, switchLanguage, apiResponse, updateApiResponse }}>
