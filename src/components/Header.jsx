@@ -18,10 +18,14 @@ export const Header = () => {
 
     const handleClick = () => {
         switchLanguage();
+
         const notif = toast.loading(apiResponse ? apiResponse.notifications.pending : 'Hmm...', {pauseOnHover: false, theme: darkMode ? "dark" : "light",});
+
         {(apiResponse && Object.keys(apiResponse).length !== 0) ? 
-            (toast.update(notif, { render: apiResponse.notifications.success, type: "success", isLoading: false, delay: 1000, autoClose: 2000, })) : (toast.update(notif, { render: 'Oops :(', type: "error", isLoading: false, delay: 1000, autoClose: 2000, }))
-        }
+            (toast.update(notif, { render: apiResponse.notifications.success, type: "success", isLoading: false, delay: 1000, autoClose: 2000, })) 
+            : 
+            (toast.update(notif, { render: 'Oops :(', type: "error", isLoading: false, delay: 1000, autoClose: 2000, }))
+        };
     }; 
 
     return (
