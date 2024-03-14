@@ -3,13 +3,15 @@ import { useLanguage } from "../contexts/LanguageContext";
 
 export const Footer = () => {
 
-  const { apiResponse } = useLanguage();
+  const { apiResponse, language } = useLanguage();
   const { contactHeader, contactEmail, personalBlog, github, linkedin, links } = apiResponse?.footer;
+
+  const isTurkish = language === 'tr';
 
   return (
     <footer id="footer" className="bg-gray-light dark:bg-dark-footer-bg w-full">
       <div className="max-w-[80%] xl:max-w-6xl m-auto py-16">
-        <h2 className="font-bold text-black-heading dark:text-bluish-gray text-left text-4xl max-w-md">{contactHeader}</h2>
+        <h2 className={`font-bold text-black-heading dark:text-bluish-gray text-left text-4xl ${isTurkish ? 'max-w-lg' : 'max-w-md'}`}>{contactHeader}</h2>
         <div className="flex flex-col lg:flex-row pt-16 pb-8">
           <a className="text-mail-red dark:text-lilac text-left mb-16 lg:mb-0 mr-auto" href={`mailto:${contactEmail}`}>👉 <span className="underline">{contactEmail}</span></a>
           <nav className="flex items-center space-x-4 lg:space-x-8 ml-auto">

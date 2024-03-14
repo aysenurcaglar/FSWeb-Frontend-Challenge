@@ -1,4 +1,9 @@
 {
+    "notifications": {
+        "pending": "",
+        "success": "",
+        "error": ""
+    },
     "header": {
         "darkMode": "",
         "lightMode": "",
