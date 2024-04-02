@@ -19,14 +19,15 @@ export const Header = () => {
     const handleClick = () => {
         switchLanguage();
 
-        const notif = toast.loading(apiResponse ? apiResponse.notifications.pending : 'Hmm...', {pauseOnHover: false, theme: darkMode ? "dark" : "light",});
+        const notif = toast.loading(apiResponse ? apiResponse.notifications.pending : 'Hmm...', { pauseOnHover: false, theme: darkMode ? "dark" : "light", });
 
-        {(apiResponse && Object.keys(apiResponse).length !== 0) ? 
-            (toast.update(notif, { render: apiResponse.notifications.success, type: "success", isLoading: false, delay: 1000, autoClose: 2000, })) 
-            : 
+        {
+            (apiResponse && Object.keys(apiResponse).length !== 0) ?
+            (toast.update(notif, { render: apiResponse.notifications.success, type: "success", isLoading: false, delay: 1000, autoClose: 2000, }))
+            :
             (toast.update(notif, { render: 'Oops :(', type: "error", isLoading: false, delay: 1000, autoClose: 2000, }))
         };
-    }; 
+    };
 
     return (
         <header className='flex flex-col max-w-[80%] xl:max-w-6xl m-auto justify-between'>
@@ -36,12 +37,11 @@ export const Header = () => {
                     onClick={toggleDarkMode}
                 >
                     <div
-                        className='absolute w-3 h-3 rounded-full transition-transform duration-300 bg-yellow'
-                        style={{ transform: darkMode ? 'translateX(30%)' : 'translateX(200%)', }}
-                    />
-                    {darkMode && (
-                        <div className="absolute w-2.5 h-2.5 rounded-full bg-toggle-gray left-2" />
-                    )}
+                        className='w-4 h-4 cursor-pointer transition-transform duration-300 transform'
+                        style={{ transform: darkMode ? 'translateX(30%)' : 'translateX(125%)' }}
+                    >
+                        {darkMode ? <img src={moon} /> : <img src={sun} />}
+                    </div>
                 </div>
 
                 <span className='dark:text-light-mode text-gray-dark font-medium tracking-wider'>
@@ -51,7 +51,7 @@ export const Header = () => {
                 <span className="text-gray-dark">|</span>
 
                 <a href="#" onClick={handleClick} className='dark:text-lilac text-toggle-purple font-medium tracking-wider'>
-                {apiHeader?.language}
+                    {apiHeader?.language}
                 </a>
             </div>
 
