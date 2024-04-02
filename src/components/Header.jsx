@@ -2,6 +2,8 @@ import React from "react";
 import { useDarkMode } from "../contexts/DarkModeContext";
 import { useLanguage } from "../contexts/LanguageContext";
 import { toast } from "react-toastify";
+import moon from '../assets/moon.svg';
+import sun from '../assets/sun.svg';
 
 export const Header = () => {
     const { darkMode, toggleDarkMode } = useDarkMode();
