@@ -23,7 +23,13 @@ export const LanguageProvider = ({ children }) => {
 
       // await new Promise(resolve => setTimeout(resolve, 1000));
 
-      const response = await axios.post('https://reqres.in/api/workintech', languageFile);
+      const response = await axios.post('https://reqres.in/api/workintech', languageFile,
+      {
+        headers: {
+          'x-api-key': 'myapikey',
+          'Content-Type': 'application/json', // optional but good to include
+        },
+      });
 
       console.log('API Response:', response.data);
       updateApiResponse(response.data);
