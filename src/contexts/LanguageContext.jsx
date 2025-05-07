@@ -4,6 +4,8 @@ import axios from 'axios';
 
 const LanguageContext = createContext();
 
+const API_KEY = import.meta.env.VITE_API_KEY;
+
 export const useLanguage = () => {
   return useContext(LanguageContext);
 };
@@ -26,7 +28,7 @@ export const LanguageProvider = ({ children }) => {
       const response = await axios.post('https://reqres.in/api/workintech', languageFile,
       {
         headers: {
-          'x-api-key': 'myapikey',
+          'x-api-key': API_KEY,
           'Content-Type': 'application/json', // optional but good to include
         },
       });
